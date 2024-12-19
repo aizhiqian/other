@@ -2,8 +2,8 @@ name: Sync File from URL
 
 on:
   # 定时触发
-  schedule:
-    - cron: '0 * * * *'  # 每小时的整点运行
+  # schedule:
+    # - cron: '0 * * * *'  # 每小时的整点运行
   # 手动触发
   workflow_dispatch:
 
@@ -16,7 +16,7 @@ jobs:
 
     - name: Download file from URL
       run: |
-        curl -o jd.txt https://raw.githubusercontent.com/WeiGiegie/vpm/main/lq.snippet
+        # curl -o jd.txt https://raw.githubusercontent.com/WeiGiegie/vpm/main/lq.snippet
 
     - name: Commit and push changes
       run: |
